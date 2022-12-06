@@ -1,0 +1,19 @@
+{
+  "name": "kamal-mono-repo",
+  "version": "1.3.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "npm version minor --workspaces && npm version minor && npm publish  && npm publish --access=public --workspaces ",
+    "build": "npm run build --workspaces",
+    "docs": "npm run docs --workspaces"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "packages\\cli",
+    "packages\\awesome-package"
+  ]
+}
